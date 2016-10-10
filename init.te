@@ -74,7 +74,7 @@ allow init self:capability dac_override;
 # Set system clock.
 allow init self:capability sys_time;
 
-allow init self:capability { sys_rawio mknod };
+allow init self:capability { sys_rawio mknod sys_module };
 
 # Mounting filesystems from block devices.
 allow init dev_type:blk_file r_file_perms;
